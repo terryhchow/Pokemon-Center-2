@@ -1,0 +1,23 @@
+.nav_bar {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center;
+}
+.nav_bar li {
+    display: block;
+    padding: 10px;
+}
+.logo {
+    max-width: 300px;
+    max-height: 60px;
+}
+.cart_icon {
+    max-width: 60px;
+    max-height: 60px;
+}
+.sign_in_icon {
+    max-width: 30px;
+    max-height: 30px;
+    padding: 10px;
+}
