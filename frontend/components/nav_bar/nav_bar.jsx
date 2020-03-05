@@ -9,8 +9,7 @@ export default ({ currentUser, logout }) => {
     ) : (
             <div>
                 <Link className="btn" to="/signup">
-                    <img className="sign_in_icon" src="assets/sign_in_icon" />
-                     SIGN IN / REGISTER
+                    <h1><span><img src={window.sign_in_icon}/></span>SIGN IN / REGISTER</h1>
                 </Link>
             </div>
         );
@@ -18,13 +17,13 @@ export default ({ currentUser, logout }) => {
         <ul className="nav_bar">
             <li>
                 <Link to="/" className="header-link">
-                    <img className="logo" src="assets/centro_pokemon_logo_2_by_animedark2-daiixj4" />
+                    <img src={window.pokemon_logo}/>
                 </Link>
             </li>
             <li>{display}</li>
             <li>
                 <Link to="/" className="header-link">
-                    <img className="cart_icon" src="assets/cart_icon" />
+                    <img src={window.cart_icon} />
                 </Link>
             </li>
         </ul>

@@ -7,6 +7,14 @@
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
+    <!-- application.html.erb -->
+    <script type="text/javascript">
+      window.cart_icon = "<%= image_url('cart_icon.png') %>";
+      window.pikachu_banner = "<%= image_url('pikachu_banner.png') %>";
+      window.pokemon_logo = "<%= image_url('pokemon_logo.png') %>";
+      window.sign_in_icon = "<%= image_url('sign_in_icon.png') %>";
+    </script>
+
     <% if current_user %>
       <script>
         window.currentUser = { 
