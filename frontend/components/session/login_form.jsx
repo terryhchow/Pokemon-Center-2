@@ -1,3 +1,6 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+
 class LoginForm extends React.Component {
     constructor(props) {
         super(props);
@@ -15,29 +18,29 @@ class LoginForm extends React.Component {
     render() {
         return (
             <div>
-                <label>Nav Bar</label>
                 <form onSubmit={this.handleSubmit} className="login-form">
-                    <h1>Register</h1>
-                    <h3>Please provide the following information</h3>
                     <div className="login-form">
                         <label>Email:
+                            <br />
                             <input type="text"
                                 value={this.state.email}
                                 onChange={this.update('email')}
                                 className="login-input"
-                                />
+                            />
                         </label>
                         <label>Password:
+                            <br />
                             <input type="password"
                                 value={this.state.password}
                                 onChange={this.update('password')}
                                 className="login-input"
-                                />
+                            />
                         </label>
                         <input className="session-submit" type="submit" value="Sign In" />
                     </div>
                 </form>
-                <Link className="btn" to="/signup">REGISTER</Link>
+                <h3>Don't have an account?</h3>
+                <Link className="btn" to="/signup">Register</Link>
             </div>
 
         )
