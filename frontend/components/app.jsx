@@ -4,12 +4,14 @@ import { Link, Switch, Route } from "react-router-dom";
 import NavBarContainer from '../components/nav_bar/nav_bar_container'
 import SplashContainer from './splash/splash_container';
 import {AuthRoute, ProtectedRoute } from '../util/route_util';
+import Modal from './session/modal';
 
 const App = () => (
     <div>
         <header>
             <Route path="/" component={NavBarContainer} />
         </header>
+        <Modal/>
         <Switch>
             
             <Route exact path="/" component={SplashContainer} />

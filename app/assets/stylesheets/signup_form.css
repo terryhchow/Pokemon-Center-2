@@ -1,0 +1,38 @@
+.signup-form {
+    font-family: sans-serif;
+    color: #767676;
+    font-weight: lighter;
+    display: flexbox;
+    margin: 100px;
+    font-size: 13px;
+}
+h1 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: #525050;
+}
+h3 {
+    margin-top: 6px;
+    margin-bottom: 6px;
+    color: #525050;
+}
+label {
+    margin-top: 5x;
+    margin-bottom: 20px;
+}
+.signup-input {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: gray solid;
+    border-width: .3mm;
+    min-width: 300px;
+    min-height: 30px;
+}
+.session-submit{
+    width: 90px;
+    height: 35px;
+    border-radius: 5px;
+}

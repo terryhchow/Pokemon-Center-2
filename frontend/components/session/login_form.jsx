@@ -5,8 +5,8 @@ class LoginForm extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            username: "",
-            password: ""
+            email: "",
+            password: "",
         };
         this.handleSubmit = this.handleSubmit.bind(this);
     }
@@ -15,12 +15,17 @@ class LoginForm extends React.Component {
         const user = Object.assign({}, this.state);
         this.props.processForm(user);
     }
+    update(field) {
+        return e => {
+            this.setState({ [field]: e.currentTarget.value })
+        }
+    }
     render() {
         return (
-            <div>
-                <form onSubmit={this.handleSubmit} className="login-form">
-                    <div className="login-form">
-                        <label>Email:
+            <div className="login_form">
+                <form onSubmit={this.handleSubmit}>
+                    <div>
+                        <label className="form_text">Email:
                             <br />
                             <input type="text"
                                 value={this.state.email}
@@ -28,7 +33,8 @@ class LoginForm extends React.Component {
                                 className="login-input"
                             />
                         </label>
-                        <label>Password:
+                        <br/>
+                        <label className="form_text">Password:
                             <br />
                             <input type="password"
                                 value={this.state.password}
@@ -36,11 +42,12 @@ class LoginForm extends React.Component {
                                 className="login-input"
                             />
                         </label>
+                        <br/>
                         <input className="session-submit" type="submit" value="Sign In" />
                     </div>
                 </form>
-                <h3>Don't have an account?</h3>
-                <Link className="btn" to="/signup">Register</Link>
+                <h3 className="form_text">Don't have an account?</h3>
+                <Link to="/signup"><button className="btn">Register</button></Link>
             </div>
 
         )

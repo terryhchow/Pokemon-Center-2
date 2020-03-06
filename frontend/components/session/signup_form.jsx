@@ -27,8 +27,11 @@ class SignupForm extends React.Component {
                 <form onSubmit={this.handleSubmit} className="signup-form">
                  <h1>Register</h1>
                     <h3>Please provide the following information</h3>   
-                <div className="signup-form">
+                    <h3>* denotes required fields</h3>   
+                    <br/>
+                <div>
                     <label>Email:
+                        <br/>
                         <input type="text"
                             value={this.state.email}
                             onChange={this.update('email')}
@@ -37,6 +40,7 @@ class SignupForm extends React.Component {
                     </label>
                     <br/>
                     <label>Password:
+                        <br/>
                     <input type="password"
                             value={this.state.password}
                             onChange={this.update('password')}
@@ -45,6 +49,7 @@ class SignupForm extends React.Component {
                     </label>
                     <br/>
                     <label>Name:
+                        <br/>
                         <input type="text"
                             value={this.state.name}
                             onChange={this.update('name')}
@@ -53,6 +58,7 @@ class SignupForm extends React.Component {
                     </label>
                     <br/>
                     <label>Address:
+                        <br/>
                         <input type="text"
                             value={this.state.address}
                             onChange={this.update('address')}

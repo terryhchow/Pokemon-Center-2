@@ -1,0 +1,45 @@
+.login_form {
+    background-color: white;
+    padding: 30px;
+    display: flexbox;
+    border:  #0054a6 dotted;
+    border-width: .5mm;
+}
+
+.session-submit {
+    background-color: #0054a6;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin: 8px 0px;
+    width: 80px;
+    height: 35px;
+}
+.session-submit:hover{
+    background-color: #6998c7;
+}
+.btn {
+    margin: 8px 0px;
+    border-radius: 3px;
+    background-color: rgba(187, 184, 184, 0.89));
+    width: 70px;
+    height: 25px;
+}
+.btn:hover {
+    background-color: rgba(182, 180, 180, 0.959);
+}
+.form_text {
+    font-family: sans-serif;
+    color: #767676;
+    font-weight: lighter;
+}
+.login-input {
+    margin: 8px 0px;
+    border-radius: 3px;
+    border: gray solid;
+    border-width: .3mm;
+    width: 170px;
+    height: 20px;
+}
