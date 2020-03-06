@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 export default ({ currentUser, openModal }) => {
     const account = currentUser ? (
         <div>
-            <button className='sign_in_icon' onClick={() => openModal('logout')}>{currentUser.name}</button>
+            <h1 className='sign_in_icon' onClick={() => openModal('logout')}>{currentUser.name}</h1>
         </div >
     ) : (
         <div>

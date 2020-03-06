@@ -1,0 +1,17 @@
+.logout_form {
+    background-color: white;
+    padding: 30px;
+    display: flexbox;
+}
+.logout_button {
+    border-radius: 3px;
+    background-color: rgba(187, 184, 184, 0.89);
+    width: 170px;
+    height: 35px;
+    color: gray;
+    font-weight: 350;
+    font-size: 16px;
+}
+.logout_button:hover {
+    color: black;
+}

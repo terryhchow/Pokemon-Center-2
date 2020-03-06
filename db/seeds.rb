@@ -8,7 +8,7 @@
 
 User.destroy_all
 
-user1 = User.create(email: "pikachu@pokemon.com", name: "Pikachu", address: "Not a pokeball", password: 'password')
-user2 = User.create(email: "lapras@pokemon.com", name: "Lapras", address: "Ice Castle", password: 'password')
+user1 = User.create(email: "pika@chu.com", name: "Pikachu", address: "Not a pokeball", password: 'password')
+user2 = User.create(email: "lapras@hrrr.com", name: "Lapras", address: "Ice Castle", password: 'password')
 user3 = User.create(email: "oshawot@pokemon.com", name: "Oshawot", address: "", password: 'password')
-user3 = User.create(email: "karp@pokemon.com", name: "Magikarp", address: "Ocean", password: 'password')
+user3 = User.create(email: "karp@karp.com", name: "Magikarp", address: "karp", password: 'password')

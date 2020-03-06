@@ -3,6 +3,7 @@
     flex-direction: row;
     justify-content: space-between; 
     align-items: center;
+    height: 70px;
 }
 .nav_bar li {
     display: block;
@@ -21,4 +22,7 @@
     max-height: 180px;
     max-width: 200px;
     padding: 10px;
+    font-family: sans-serif;
+    font-size: 22px;
+    color: rgb(104, 104, 104);
 }
