@@ -16,6 +16,7 @@ export default ({ currentUser, openModal }) => {
             </div >
         );
     return (
+        <div>
         <ul className="nav_bar">
             <li>
                 <Link to="/" className="header-link">
@@ -28,7 +29,9 @@ export default ({ currentUser, openModal }) => {
                     <img className="cart_icon" src={window.cart_icon} />
                 </Link>
             </li>
+            <br/>
         </ul>
+        </div>
     )
 }
 

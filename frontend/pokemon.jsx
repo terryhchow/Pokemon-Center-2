@@ -15,14 +15,8 @@ document.addEventListener("DOMContentLoaded", () => {
         };
     }
 
-    // const preloadedState = { user: window.currentUser}
     const store = configureStore(preloadedState);
 
-    // for testing purposes
-    window.getState = store.getState;
-    window.dispatch = store.dispatch;
-    window.currentUser = currentUser;
-    
 
     ReactDOM.render(<Root store={store}/>, root); });
 

@@ -8,7 +8,8 @@ import LogoutForm from './logout_form';
 const mapDispatchToProps = dispatch => {
     return {
         logout: (user) => dispatch(logout(user)),
-        closeModal: () => dispatch(closeModal())
+        closeModal: () => dispatch(closeModal()),
+        formType: 'logout',
     };
 };
 

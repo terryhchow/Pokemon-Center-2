@@ -30,7 +30,7 @@ class SignupForm extends React.Component {
                     <h3>* denotes required fields</h3>   
                     <br/>
                 <div>
-                    <label>Email:
+                    <label>*Email:
                         <br/>
                         <input type="text"
                             value={this.state.email}
@@ -39,7 +39,7 @@ class SignupForm extends React.Component {
                             />
                     </label>
                     <br/>
-                    <label>Password:
+                    <label>*Password:
                         <br/>
                     <input type="password"
                             value={this.state.password}
@@ -48,7 +48,7 @@ class SignupForm extends React.Component {
                         />
                     </label>
                     <br/>
-                    <label>Name:
+                    <label>*Name:
                         <br/>
                         <input type="text"
                             value={this.state.name}

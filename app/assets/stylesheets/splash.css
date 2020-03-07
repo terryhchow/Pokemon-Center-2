@@ -1,6 +1,27 @@
-.splash {
-    display: flex
+/* .splash {
+    display: inline-block;
+} */
+.top-banner {
+    width: 100%;
+    margin-top: 10px;
 }
-img {
-    width: 100% !important;
+.banner {
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2pc;
+    
 }
+h1 {
+   width: 100%; 
+   text-align: center; 
+   font-family: sans-serif;
+   color: white;
+   font-size: 14px;
+   background-color: #0054a6;
+
+   margin: 0px;
+   align-items: center;
+   padding: 7px;
+} 

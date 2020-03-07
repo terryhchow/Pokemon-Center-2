@@ -7,9 +7,11 @@
   z-index: 10;
 }
 
+
 .modal-child {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 218px;
+  left: 56%;
   transform: translate(-50%, -50%);
 }
+

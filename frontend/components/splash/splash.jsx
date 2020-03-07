@@ -1,8 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default ({ user }) => (
     <div className="splash">
-        <img src={window.pikachu_banner} />
+        <h1>Free Shipping on All Orders over $50!</h1>
+        <Link to="/products">
+            <img className="top-banner" src={window.pikachu_banner} />
+        </Link>
+        <br/>
+        <Link to="/products">
+            <img className="banner" src={window.starter_banner} />
+        </Link>
     </div>
 );
 
