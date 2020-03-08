@@ -10,8 +10,8 @@
 
 .modal-child {
   position: absolute;
+  left: 79.5%;
   top: 218px;
-  left: 56%;
   transform: translate(-50%, -50%);
 }
 

@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between; 
-    align-items: center;
+    align-items: top;
     height: 70px;
 }
 .nav_bar li {
@@ -15,16 +15,21 @@
 }
 .cart_icon {
     max-width: 160px;
-    max-height: 160px;
-    
+    max-height: 70px;
+    position: absolute;
+    left: 85%;
+    top: 0mm;
 }
 .sign_in_icon {
-    text-align: center;
+    /* text-align: center; */
     max-height: 180px;
     max-width: 200px;
     padding: 10px;
     font-family: sans-serif;
     font-size: 22px;
     color: rgb(104, 104, 104);
+    position: absolute;
+    left: 72%;
+    top: -1mm;
 }
 

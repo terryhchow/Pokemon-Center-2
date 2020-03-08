@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default ({ user }) => (
     <div className="splash">
-        <h1>Free Shipping on All Orders over $50!</h1>
+        <h1 className="free-ship">Free Shipping on All Orders over $50!</h1>
         <Link to="/products">
             <img className="top-banner" src={window.pikachu_banner} />
         </Link>
