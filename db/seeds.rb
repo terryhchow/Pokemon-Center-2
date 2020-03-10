@@ -15,10 +15,10 @@ user2 = User.create(email: "lapras@hrrr.com", name: "Lapras", address: "Ice Cast
 user3 = User.create(email: "oshawot@pokemon.com", name: "Oshawot", address: "", password: 'password')
 user3 = User.create(email: "karp@karp.com", name: "Magikarp", address: "karp", password: 'password')
 
-product1 = Product.create(name:"Pikachu Plush", description:"Soft and huggable plush", category:"plush")
-product2 = Product.create(name:"Magikarp Plush", description:"Soft and huggable plush", category:"plush")
-product3 = Product.create(name:"Oshawot Plush", description:"Soft and huggable plush", category:"plush")
-product4 = Product.create(name:"Lapras Plush", description:"Soft and huggable plush", category:"plush")
-product5 = Product.create(name:"Pikachu Socks", description:"Black socks with pikachu pattern", size:"large", category:"clothing")
+product1 = Product.create(name:"Pikachu Plush", description:"Soft and huggable plush", category:"plush", price: 200.00)
+product2 = Product.create(name:"Magikarp Plush", description:"Soft and huggable plush", category:"plush",  price: 50.00)
+product3 = Product.create(name:"Oshawot Plush", description:"Soft and huggable plush", category:"plush", price: 50.00)
+product4 = Product.create(name:"Lapras Plush", description:"Soft and huggable plush", category:"plush", price: 50.00)
+product5 = Product.create(name:"Pikachu Socks", description:"Black socks with pikachu pattern", size:"large", category:"clothing", price: 14.99)
 
 cart_item1 = CartItem.create(user_id:1, product_id:1, quantity:1)

@@ -18,8 +18,16 @@ export const requestAllProducts = () => dispatch => {(
     .then(products => dispatch(receiveAllProducts(products)))
 )}
 
-export const requestProduct = () => dispatch => {(
-    fetchProduct()
-    .then(product => dispatch(receiveProduct(product)))
-)}
+export const requestProduct = (id) => dispatch => {
+    // debugger
+    return(
+
+        fetchProduct(id)
+        .then(product => {
+            // debugger
+            dispatch(receiveProduct(product))
+        }
+        )
+    )
+}
 

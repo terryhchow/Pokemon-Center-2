@@ -2,8 +2,11 @@
     background-color: white;
     padding: 30px;
     display: flexbox;
-    top: 218px;
-    left: 56%;
+    position: absolute;
+    top: -149px;
+    left: -175px;
+    border:  #0054a6 dotted;
+    border-width: .5mm;
 }
 .logout_button {
     border-radius: 3px;
