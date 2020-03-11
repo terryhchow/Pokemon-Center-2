@@ -32,4 +32,10 @@
     left: 72%;
     top: -1mm;
 }
+.nav2 {
+    display: inline-block;
+    max-width: 100%;
+    border-top: grey solid;
+    border-width: thin;
+}
 

@@ -1,6 +1,36 @@
 .product_index_item {
-    font-size: 28px;
+    margin-top: 50px;
+    font-size: 20px;
     font-weight: 500;
     font-family: sans-serif;
     color: #525050;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    display: inline-block;
+}
+
+.item {
+    color:  black;
+    text-decoration: none;
+}
+
+.item:visited {
+    color:  black;
+    text-decoration: none;
+}
+
+.product_index_item:hover {
+    background-color: rgb(245, 240, 240);
+}
+
+.item_image {
+    padding: 10px;
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.price {
+    color: #525050;
+    font-size: 16px;
 }

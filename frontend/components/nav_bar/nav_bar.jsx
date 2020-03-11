@@ -31,6 +31,7 @@ export default ({ currentUser, openModal }) => {
             </li>
             <br/>
         </ul>
+            <img className="nav2" src={nav2}/>
         </div>
     )
 }

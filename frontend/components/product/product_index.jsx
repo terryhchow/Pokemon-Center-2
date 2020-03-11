@@ -17,11 +17,11 @@ class IndexForm extends React.Component {
         if (products.length === 0)
             return null;
         return(
-             <div>
-                <header>
-                    <Link to="/">Home</Link>
+             <div className="product_index"> 
+                <header className = "header">
+                    <Link to="/" className="prod_path">HOME</Link>
                 </header>
-                <div> {
+                <div className="prod_block"> {
                     products.map(product => <ProductIndexItem product={product} key={product.id}/>)
                     }
                 </div>

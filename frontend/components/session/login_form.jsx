@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { throws } from 'assert';
 
 
 class LoginForm extends React.Component {
@@ -21,10 +22,18 @@ class LoginForm extends React.Component {
             this.setState({ [field]: e.currentTarget.value })
         }
     }
+    renderErrors() {
+        return (
+            <ul>
+                {this.props.errors}
+            </ul>
+        );
+    }
     render() {
         return (
             <div className="login_form">
                 <form onSubmit={this.handleSubmit}>
+                {this.renderErrors()}
                     <div>
                         <label className="form_text">Email:
                             <br />
