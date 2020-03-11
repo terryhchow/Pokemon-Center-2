@@ -4,7 +4,6 @@ import IndexForm from './product_index'
 import { requestAllProducts } from "../../actions/product_index_actions";
 
 const mapStateToProps = state => {
-    console.log('before product index container map state to props,')
     return {
         products: Object.values(state.products)
     }

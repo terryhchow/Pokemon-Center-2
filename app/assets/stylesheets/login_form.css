@@ -26,6 +26,7 @@
     background-color: rgba(187, 184, 184, 0.89);
     width: 70px;
     height: 25px;
+    margin-left: 5px;
 }
 .btn:hover {
     background-color: rgba(182, 180, 180, 0.959);

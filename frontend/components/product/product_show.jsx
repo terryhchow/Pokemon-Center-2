@@ -24,6 +24,7 @@ class ProductShow extends React.Component {
                 </div>
                 <div className="description">
                     <h2>Description</h2>
+                    <br/>
                     <h2>{product.description}</h2>
                 </div>
 

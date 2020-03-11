@@ -11,6 +11,9 @@ export default ({ user }) => (
         <Link to="/products">
             <img className="banner" src={window.starter_banner} />
         </Link>
+        <Link to="/products/25">
+            <img className="banner" src={window.vaporeon_banner} />
+        </Link>
     </div>
 );
 

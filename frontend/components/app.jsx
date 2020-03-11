@@ -5,6 +5,7 @@ import NavBarContainer from '../components/nav_bar/nav_bar_container'
 import SplashContainer from './splash/splash_container';
 import ProductIndexContainer from './product/product_index_container'
 import ProductShowContainer from './product/product_show_container'
+import CartContainer from './cart/cart_container';
 import {AuthRoute, ProtectedRoute } from '../util/route_util';
 import Modal from './session/modal';
 
@@ -18,6 +19,7 @@ const App = () => (
             <Route exact path="/" component={SplashContainer} />
             <Route exact path="/products" component={ProductIndexContainer} />
             <Route exact path="/products/:productId" component={ProductShowContainer} />
+            <Route exact path="/products/cart" component={CartContainer} />
             <AuthRoute exact path="/signup" component={SignupFormContainer} />
         </Switch>
     </div>

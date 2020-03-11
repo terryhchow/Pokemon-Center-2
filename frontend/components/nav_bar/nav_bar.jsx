@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 export default ({ currentUser, openModal }) => {
     const account = currentUser ? (
         <div>
-            <h1 className='sign_in_icon' onClick={() => openModal('logout')}>{currentUser.name}</h1>
+            <h1 className='sign_in_name' onClick={() => openModal('logout')}>{currentUser.name}</h1>
         </div >
     ) : (
         <div>
@@ -25,13 +25,15 @@ export default ({ currentUser, openModal }) => {
             </li>
             <li>{account}</li>
             <li>
-                <Link to="/" className="header-link">
+                <Link to="/products/cart" className="header-link">
                     <img className="cart_icon" src={window.cart_icon} />
                 </Link>
             </li>
             <br/>
         </ul>
-            <img className="nav2" src={nav2}/>
+            <Link to="/products">
+                <img className="nav2" src={nav2}/>
+            </Link>
         </div>
     )
 }

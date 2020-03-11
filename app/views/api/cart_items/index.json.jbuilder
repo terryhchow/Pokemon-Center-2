@@ -1,5 +1,5 @@
-@products.each do |product|
-    json.set! product.id do
-        json.extract! product, :name, :description, :size, :category, :price, :id
+@cart_items.each do |cart_item|
+    json.set! cart_item.id do
+        json.extract! cart_item, :id, :user_id, :product_id, :quantity
     end
 end
