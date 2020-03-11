@@ -11,6 +11,7 @@ class LoginForm extends React.Component {
             password: "",
         };
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleDemo = this.handleDemo.bind(this)
     }
     handleSubmit(e) {
         e.preventDefault();
@@ -21,6 +22,14 @@ class LoginForm extends React.Component {
         return e => {
             this.setState({ [field]: e.currentTarget.value })
         }
+    }
+    handleDemo(e) {
+        e.preventDefault();
+        const demo = {
+            email: "pika@chu.com",
+            password: "password"
+        }
+        this.props.processForm(demo)
     }
     renderErrors() {
         return (
@@ -58,6 +67,7 @@ class LoginForm extends React.Component {
                 </form>
                 <h3 className="form_text">Don't have an account?</h3>
                 <Link to="/signup"><button className="btn">Register</button></Link>
+                <button className="btn" onClick={this.handleDemo}>Demo</button>
             </div>
 
         )
