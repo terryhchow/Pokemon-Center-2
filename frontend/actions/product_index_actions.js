@@ -14,7 +14,7 @@ const receiveProduct = product => ({
 })
 
 
-
+ 
 export const requestAllProducts = () => dispatch => {(
     fetchAllProducts()
     .then(products => dispatch(receiveAllProducts(products)))
