@@ -5,3 +5,18 @@
 
 * [Live Site](https://pokemon-center-app.herokuapp.com/#/)
 
+<h2>Technologies</h2>
+<p>Ruby on Rails, PostgreSQL, React, Redux</p>
+
+
+<h2>Site Features</h2>
+<h3>User Authorization</h3>
+<p>Users can log in via the "sign in/ register" button on the navigation bar.  This button opens a modal in which you can sign in if a</p>
+
+<h3>Products Index Page</h3>
+<p>This page shows all of the products available for purchase.  Each product icon is a link to the individual product's product page.</p>
+<h3>Product Show Page</h3>
+<p>This page shows details of the product, including a picture, product name, price, and description.  There is also a button to add the product to your cart.</p>
+<h3>Shopping Cart</h3>
+<p>Users can view their shopping cart items on the cart page, which you can access by pressing the "cart" button on the nav bar.  Users who are not logged in will get a message indicating that you must be signed in to view the shopping cart.</p>
+
