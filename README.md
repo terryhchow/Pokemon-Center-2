@@ -1,24 +1,7 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+<h2>Project Overview</h2>
+<p>Pokemon Center is an ecommerce site selling products related to the popular Pokemon media franchise.  The site features a products page to view all products, and pages for individual product items. It includes a login and sign up feature.  Logged in users can view their shopping carts.  This project was built with a Ruby on Rails backend framework, using a PostgreSQL database. The frontend was built with React and Redux as a single page application. </p>
 
-Things you may want to cover:
+* [Live Site](https://pokemon-center-app.herokuapp.com/#/)
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
