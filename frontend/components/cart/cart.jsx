@@ -1,26 +1,37 @@
 import React from 'react';
-
+import CartIndexItem from './cart_index_item';
 import { Link } from 'react-router-dom';
 
 class CartForm extends React.Component {
-    // constructor(props) {
-    //     super(props)
-    // };
+    constructor(props) {
+        super(props)
+    };
 
-    // componentDidMount() {
-    //     this.props.getCartItems();
-    // }
+    componentDidMount() {
+        this.props.getCartItems();
+    }
+
 
     render() {
-        return (
+        const { products } = this.props;
+        const { currentUser } = this.props;
+        const cart_page = currentUser? (
             <div className="cart_items">
                 <header className="header">
                     <h1>Shopping Cart</h1>
                 </header>
-                <div className="prod_block"> 
-                {cart_items.map(product => <ProductIndexItem product={cart_item.productId} key={product.id} />)}
+                <br />
+                <div className="prod_block">
+                    {products.map(product => <CartIndexItem product={product} key={product.id} />)}
                 </div>
             </div>
+        ) : (
+            <div className="header">
+                <h1>Please Sign in to View Shopping Cart</h1>
+            </div>
+            )
+        return (
+            cart_page
         )
     }
 }

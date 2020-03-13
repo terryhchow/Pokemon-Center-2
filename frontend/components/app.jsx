@@ -19,7 +19,7 @@ const App = () => (
             <Route exact path="/" component={SplashContainer} />
             <Route exact path="/products" component={ProductIndexContainer} />
             <Route exact path="/products/:productId" component={ProductShowContainer} />
-            <Route exact path="/products/cart" component={CartContainer} />
+            <Route exact path="/cart" component={CartContainer} />
             <AuthRoute exact path="/signup" component={SignupFormContainer} />
         </Switch>
     </div>

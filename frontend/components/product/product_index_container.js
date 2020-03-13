@@ -5,7 +5,7 @@ import { requestAllProducts } from "../../actions/product_index_actions";
 
 const mapStateToProps = state => {
     return {
-        products: Object.values(state.products)
+        products: Object.values(state.entities.products)
     }
 };
 

@@ -7,6 +7,9 @@ class User < ApplicationRecord
 
 
     has_many :cart_items
+    has_many :cart_products,
+    through: :cart_items,
+    source: :product
 
     attr_reader :password
     after_initialize :ensure_session_token

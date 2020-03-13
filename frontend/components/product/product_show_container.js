@@ -7,13 +7,13 @@ import { withRouter } from 'react-router-dom';
 const mapStateToProps = (state, ownProps) => {
     // debugger
     return{
-
-        product: state.products[ownProps.match.params.productId]
+        product: state.entities.products[ownProps.match.params.productId]
     }
 };
 
 const mapDispatchToProps = dispatch => ({
     requestProduct: (productId) => dispatch(requestProduct(productId))
+    // addtocart: (productId) => dispatch(addtocar(productId))
 });
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(ShowForm))

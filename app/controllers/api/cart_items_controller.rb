@@ -16,7 +16,7 @@ class Api::CartItemsController < ApplicationController
   end
 
   def destroy
-      @cart_item = CartItem.find_by(params[:id])
+      @cart_item = CartItem.find_by(id: params[:id])
       render :index
   end
 

@@ -25,7 +25,7 @@ export default ({ currentUser, openModal }) => {
             </li>
             <li>{account}</li>
             <li>
-                <Link to="/products/cart" className="header-link">
+                <Link to="/cart" className="header-link">
                     <img className="cart_icon" src={window.cart_icon} />
                 </Link>
             </li>

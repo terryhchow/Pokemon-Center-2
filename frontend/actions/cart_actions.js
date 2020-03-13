@@ -4,14 +4,14 @@ export const RECEIVE_CART_ITEMS = 'RECEIVE_CART_ITEMS'
 export const RECEIVE_CART_ITEM = 'RECEIVE_CART_ITEM'
 export const REMOVE_CART_ITEM = 'REMOVE_CART_ITEM'
 
-const receiveCartItems = cart_items => ({
+const receiveCartItems = payload => ({
     type: RECEIVE_CART_ITEMS,
-    cart_items
+    payload
 })
 
-const receiveCartItem = (cart_item) => ({
+const receiveCartItem = (cartItem) => ({
     type: RECEIVE_CART_ITEMS,
-    cart_item
+    cartItem
 })
 
 const removeCartItem = (cartItemId) => ({
@@ -21,7 +21,7 @@ const removeCartItem = (cartItemId) => ({
 
 export const getCartItems = () => dispatch => (
     fetchCartItems()
-        .then(cart_items=> dispatch(receiveCartItems(cart_items)))
+        .then(payload=> dispatch(receiveCartItems(payload)))
 )
 
 export const makeCartItems = (cart_item) => dispatch => (

@@ -5,9 +5,9 @@ const cartReducer = (oldState = {}, action) => {
     let nextState = Object.assign({}, oldState);
     switch (action.type) {
         case RECEIVE_CART_ITEMS:
-            return action.cart_items;
+            return action.payload.cartItems;
         case RECEIVE_CART_ITEM:
-            nextState[action.cart_item.id] = action.cart_item;
+            nextState[action.cartItem.id] = action.cartItem;
             return nextState;
         case REMOVE_CART_ITEM:
             delete nextState[action.cartItemId]

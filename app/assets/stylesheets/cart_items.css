@@ -2,6 +2,8 @@
     border-top: grey solid;
     border-width: thin;
     display: flex;
-    margin-top: 10px;
+    flex-direction: column;
+    margin-top: 1px;
     margin-left: 15px;
+    font-family: sans-serif;
 }

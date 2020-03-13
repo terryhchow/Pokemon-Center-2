@@ -11,8 +11,6 @@ const rootReducer = combineReducers({
     entities: entitiesReducer,
     ui: uiReducer,
     errors: errorsReducer,
-    products: productReducer,
-    cartReducer: cartReducer
 });
 
 export default rootReducer;

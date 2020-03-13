@@ -5,8 +5,11 @@ import { getCartItems } from "../../actions/cart_actions";
 
 const mapStateToProps = state => {
     return {
-        cart_items: Object.values(state.cart_items)
+        currentUserId: state.session.id,
+        products: Object.values(state.entities.products),
+        currentUser: state.session.currentUser
     }
+
 };
 
 const mapDispatchToProps = dispatch => ({
