@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import AddToCartContainer from './add_to_cart_container';
 
 class ProductShow extends React.Component {
     componentDidMount() {
@@ -19,7 +20,8 @@ class ProductShow extends React.Component {
                     <div className="item_side">
                     <h1 className="show_name">{product.name}</h1>
                     <h1 className="show_price">${product.price}</h1>
-                    <button className="add_cart">ADD TO CART</button>
+                        <button className="add_cart">ADD TO CART</button>
+                        {/* <button className="add_cart">ADD TO CART {<AddToCartContainer/>}</button> */}
                     </div>
                 </div>
                 <div className="description">
