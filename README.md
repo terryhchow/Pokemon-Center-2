@@ -11,7 +11,7 @@
 
 <h2>Site Features</h2>
 <h3>User Authorization</h3>
-<p>Users can log in via the "sign in/ register" button on the navigation bar.  This button opens a modal in which you can sign in if a</p>
+<p>Users can log in via the "sign in/ register" button on the navigation bar.  This button opens a modal in which you can sign in if you already have an account, or be redirected to the sign up page, which will take information from a user and use it to create a new user.  The sign in form also features a "Demo" button, which will log the user in as a demo user.</p>
 
 <h3>Products Index Page</h3>
 <p>This page shows all of the products available for purchase.  Each product icon is a link to the individual product's product page.</p>
