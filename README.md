@@ -13,7 +13,7 @@ Ruby on Rails, PostgreSQL, React, Redux
 ### User Authorization
 Users can log in via the "sign in/ register" button on the navigation bar.  This button opens a modal in which you can sign in if you already have an account, or be redirected to the sign up page, which will take information from a user and use it to create a new user.  The sign in form also features a "Demo" button, which will log the user in as a demo user.
 
-![](https://user-images.githubusercontent.com/37354663/76651354-92d54d00-6521-11ea-8b52-17d7bb38c432.png)
+![](https://user-images.githubusercontent.com/37354663/76651354-92d54d00-6521-11ea-8b52-17d7bb38c432.png =500x500)
 
 ### Products Index Page
 This page shows all of the products available for purchase.  Each product icon is a link to the individual product's product page.
