@@ -13,8 +13,7 @@ class CartForm extends React.Component {
 
 
     render() {
-        const { products } = this.props;
-        const { currentUser } = this.props;
+        const { products, deleteCartItem, currentUser, cart } = this.props;
         const cart_page = currentUser? (
             <div className="cart_items">
                 <header className="header">
@@ -22,7 +21,12 @@ class CartForm extends React.Component {
                 </header>
                 <br />
                 <div className="prod_block">
-                    {products.map(product => <CartIndexItem product={product} key={product.id} />)}
+                    {products.map(product => 
+                    <CartIndexItem 
+                        product={product} 
+                        cart={cart} 
+                        key={product.id} 
+                        deleteCartItem={deleteCartItem}/>)}
                 </div>
             </div>
         ) : (

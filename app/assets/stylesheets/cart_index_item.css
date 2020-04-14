@@ -28,3 +28,10 @@
     font-size: 14px;
     margin-left: 380px;
 }
+.remove-item{
+    align-content: top;
+    border: none;
+    background: none;
+    max-height: 50px;
+    ;
+}

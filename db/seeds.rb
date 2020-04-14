@@ -27,5 +27,7 @@ product9 = Product.create(name:"Pikachu Water Bottle", description:"With a cool 
 
 
 cart_item1 = CartItem.create(user_id:user1.id, product_id:product4.id, quantity:1)
+cart_item1 = CartItem.create(user_id:user1.id, product_id:product1.id, quantity:2)
+cart_item1 = CartItem.create(user_id:user2.id, product_id:product4.id, quantity:1)
 
 

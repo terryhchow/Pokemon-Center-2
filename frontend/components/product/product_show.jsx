@@ -21,7 +21,6 @@ class ProductShow extends React.Component {
                     <h1 className="show_name">{product.name}</h1>
                     <h1 className="show_price">${product.price}</h1>
                         <button className="add_cart">ADD TO CART</button>
-                        {/* <button className="add_cart">ADD TO CART {<AddToCartContainer/>}</button> */}
                     </div>
                 </div>
                 <div className="description">
