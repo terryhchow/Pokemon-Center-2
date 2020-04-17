@@ -6,6 +6,7 @@ class ProductShow extends React.Component {
     componentDidMount() {
         this.props.requestProduct(this.props.match.params.productId);
     }
+    
     render () {
         const { product } = this.props;
         if (!product) return null
@@ -21,6 +22,7 @@ class ProductShow extends React.Component {
                     <h1 className="show_name">{product.name}</h1>
                     <h1 className="show_price">${product.price}</h1>
                         <button className="add_cart">ADD TO CART</button>
+                        <AddToCartContainer>ADD TO CART</AddToCartContainer>
                     </div>
                 </div>
                 <div className="description">

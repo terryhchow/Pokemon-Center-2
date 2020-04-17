@@ -7,7 +7,8 @@ const mapStateToProps = state => {
     return {
         // currentUserId: state.session.id,
         // products: Object.values(state.entities.products),
-        // currentUser: state.session.currentUser.id
+        product: state.entities.products.id,
+        currentUser: state.session.currentUser.id,
         cart_item: state.entities.cart
     }
 

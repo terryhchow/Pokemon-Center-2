@@ -25,7 +25,7 @@ export const getCartItems = () => dispatch => (
 )
 
 export const makeCartItems = (cart_item) => dispatch => (
-    createCartItems()
+    createCartItems(cart_item)
         .then(cart_item => dispatch(receiveCartItem(cart_item)))
 )
 
