@@ -6,6 +6,7 @@ json.cartItems do
     end
 end
 
+
 json.products do
     current_user.cart_products.each do |cart_product|
         json.set! cart_product.id do

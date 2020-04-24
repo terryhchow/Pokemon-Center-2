@@ -10,7 +10,7 @@ const receiveCartItems = payload => ({
 })
 
 const receiveCartItem = (cartItem) => ({
-    type: RECEIVE_CART_ITEMS,
+    type: RECEIVE_CART_ITEM,
     cartItem
 })
 

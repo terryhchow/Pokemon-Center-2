@@ -3,15 +3,18 @@ import { connect } from 'react-redux';
 import ShowForm from './product_show'
 import { requestProduct } from "../../actions/product_index_actions";
 import { withRouter } from 'react-router-dom';
+import {makeCartItems} from "../../actions/cart_actions"
 
 const mapStateToProps = (state, ownProps) => {
     return{
+        currentUser: state.session.currentUser,
         product: state.entities.products[ownProps.match.params.productId]
     }
 };
 
 const mapDispatchToProps = dispatch => ({
-    requestProduct: (productId) => dispatch(requestProduct(productId))
+    requestProduct: (productId) => dispatch(requestProduct(productId)),
+    createCartItem: (cart_item) => dispatch(makeCartItems(cart_item))
 });
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(ShowForm))

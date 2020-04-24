@@ -12,7 +12,11 @@ class Api::CartItemsController < ApplicationController
 
     def create
       @cart_item = CartItem.new(cart_params)
-      render :index
+      if @cart_item.save 
+        render :show
+      else
+        render json: @cart_item.errors.full_messages, status: 422
+      end
   end
 
   def destroy

@@ -3,11 +3,7 @@ import React from 'react';
 class AddToCart extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
-            user_id: props.currentUser.id,
-            product_id: props.entities.product,
-            quantity: 1
-        }
+        this.state = this.props.createCartItem
         this.handleSubmit = this.handleSubmit.bind(this);
     }
     handleSubmit(e) {
@@ -27,9 +23,10 @@ class AddToCart extends React.Component {
         if (!currentUser) return null
         return (
             <div>
-            <form onSubmit={this.handleSubmit} className="add_to_cart">
+                <button onClick={this.handleSubmit} className="add_to_cart">Submit</button>
+            {/* <form onSubmit={this.handleSubmit} className="add_to_cart">
                 <input className="add-cart-submit" type="submit" value="Submit" />
-            </form>
+            </form> */}
             </div>
 
         )

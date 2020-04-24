@@ -26,6 +26,7 @@ class CartForm extends React.Component {
                         product={product} 
                         cart={cart} 
                         key={product.id} 
+                        currentUser={currentUser}
                         deleteCartItem={deleteCartItem}/>)}
                 </div>
             </div>

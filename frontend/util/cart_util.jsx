@@ -5,13 +5,14 @@ export const fetchCartItems = () => (
     })
 );
 
-export const createCartItems = (cartId) => (
-    $.ajax({
+export const createCartItems = (cart_item) => {
+    debugger
+    return $.ajax({
         method: 'POST',
-        url: 'api/products',
-        data: {cartId}
+        url: 'api/cart_items',
+        data: {cart_item}
     })
-);
+};
 
 
 export const deleteCartItems = (cartId) => (
