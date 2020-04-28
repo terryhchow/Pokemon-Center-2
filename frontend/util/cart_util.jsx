@@ -6,7 +6,6 @@ export const fetchCartItems = () => (
 );
 
 export const createCartItems = (cart_item) => {
-    debugger
     return $.ajax({
         method: 'POST',
         url: 'api/cart_items',

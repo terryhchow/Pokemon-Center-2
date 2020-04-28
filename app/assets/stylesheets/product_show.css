@@ -56,6 +56,11 @@
 .show_name {
     color: black;
 }
+.quantity {
+    font-size: 18px;
+    margin-bottom: 10px;
+    
+}
 .show_price {
     font-size: 18px;
     color:#0054a6;

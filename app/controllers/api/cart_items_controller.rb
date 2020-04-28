@@ -5,11 +5,6 @@ class Api::CartItemsController < ApplicationController
         render :index
     end
 
-    # def edit
-    #     @user = User.find_by_credentials(params[:user][:email], params[:user][:password])
-    #     render :index
-    # end
-
     def create
       @cart_item = CartItem.new(cart_params)
       if @cart_item.save 
@@ -17,11 +12,15 @@ class Api::CartItemsController < ApplicationController
       else
         render json: @cart_item.errors.full_messages, status: 422
       end
-  end
+    end
 
   def destroy
       @cart_item = CartItem.find_by(id: params[:id])
-      render :index
+      if @cart_item.destroy
+        render :show
+      else
+        render json: @cart_item.errors.full_messages, status:422
+      end
   end
 
   private
