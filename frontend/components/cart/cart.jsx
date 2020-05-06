@@ -11,9 +11,8 @@ class CartForm extends React.Component {
         this.props.getCartItems();
     }
 
-
     render() {
-        const { products, deleteCartItem, currentUser, cart } = this.props;
+        const { products, destroyCartItem, currentUser, cart } = this.props;
         const cart_page = currentUser? (
             <div className="cart_items">
                 <header className="header">
@@ -27,7 +26,7 @@ class CartForm extends React.Component {
                         cart={cart} 
                         key={product.id} 
                         currentUser={currentUser}
-                        deleteCartItem={deleteCartItem}/>)}
+                        destroyCartItem={destroyCartItem}/>)}
                 </div>
             </div>
         ) : (

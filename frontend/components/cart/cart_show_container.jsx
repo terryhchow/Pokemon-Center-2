@@ -1,7 +1,17 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import CartForm from './cart'
-import { getCartItems, destroyCartItem } from "../../actions/cart_actions";
+import { render } from 'react-dom';
+
+class CartShow extends React.Component {
+    render() {
+        return (
+            <div>
+                {}
+                <h1>Item Successfully Added to Cart!</h1>
+            </div>
+        )
+    }
+}
 
 const mapStateToProps = state => {
     return {
@@ -10,13 +20,12 @@ const mapStateToProps = state => {
         currentUser: state.session.currentUser,
         cart: Object.values(state.entities.cart)
     }
-
 };
 
 const mapDispatchToProps = dispatch => ({
-    getCartItems: () => dispatch(getCartItems()),
+    getCartItem: () => dispatch(getCartItem()),
     destroyCartItem: (cartItemId) => dispatch(destroyCartItem(cartItemId))
 
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(CartForm)
+export default connect(mapStateToProps, mapDispatchToProps)(CartShow)

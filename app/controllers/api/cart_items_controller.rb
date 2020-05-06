@@ -16,15 +16,13 @@ class Api::CartItemsController < ApplicationController
 
   def destroy
       @cart_item = CartItem.find_by(id: params[:id])
-      if @cart_item.destroy
+      if @cart_item && @cart_item.delete
         render :show
-      else
-        render json: @cart_item.errors.full_messages, status:422
       end
   end
 
   private
   def cart_params
-    params.require(:cart_item).permit(:user_id, :product_id, :quantity)
+    params.require(:cart_item).permit(:user_id, :product_id, :quantity, :id)
   end
 end

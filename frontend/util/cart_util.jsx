@@ -14,11 +14,12 @@ export const createCartItems = (cart_item) => {
 };
 
 
-export const deleteCartItems = (cartId) => (
-    $.ajax({
+export const deleteCartItem = (cartId) => {
+    return $.ajax({
         method: 'DELETE',
-        url: `api/cart_items/${cartId}`
+        url: `api/cart_items/${cartId}`,
+        data: {cartId}
     })
-);
+};
 
 
