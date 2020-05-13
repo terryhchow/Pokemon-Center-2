@@ -23,7 +23,7 @@ const CartIndexItem = (props) => {
             </Link>
             <span>
                 <h1 className="cart-name">{props.product.name}</h1>
-                <h1 className="cart-quantity">{props.product.quantity}</h1>
+                {/* <h1 className="cart-quantity">{props.cart[foundId].quantity}</h1> */}
                 <h1 className="cart-price">{props.product.price}</h1>
                 {/* <h1 className="cart-total">{props.product.price*props.cart.quantity}</h1> */}
             </span>

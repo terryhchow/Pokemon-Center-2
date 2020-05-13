@@ -21,6 +21,10 @@ class Api::CartItemsController < ApplicationController
       end
   end
 
+  def show
+    @cart_item = CartItem.find_by(id: params[:id])
+  end
+
   private
   def cart_params
     params.require(:cart_item).permit(:user_id, :product_id, :quantity, :id)

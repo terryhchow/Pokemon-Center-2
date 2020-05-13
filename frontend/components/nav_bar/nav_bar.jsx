@@ -13,7 +13,7 @@ export default ({ currentUser, openModal }) => {
             <span onClick={() => openModal('login')}>
                     <img className='sign_in_icon' src={window.sign_in_icon}/>
             </span>
-            </div >
+        </div >
         );
     return (
         <div>
