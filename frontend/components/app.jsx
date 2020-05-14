@@ -22,7 +22,7 @@ const App = () => (
             <Route exact path="/products/:productId" component={ProductShowContainer} />
             <Route exact path="/cart" component={CartContainer} />
             <AuthRoute exact path="/signup" component={SignupFormContainer} />
-            <Route path="/cart_items" component={CartShowContainer} />
+            {/* <Route path="/cart_items" component={CartShowContainer} /> */}
 
         </Switch>
     </div>

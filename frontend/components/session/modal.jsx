@@ -3,6 +3,7 @@ import { closeModal } from '../../actions/modal_actions';
 import { connect } from 'react-redux';
 import LoginFormContainer from './login_form_container';
 import LogoutFormContainer from './logout_form_container';
+import AddedToCartFormContainer from './added_to_cart_form_container';
 
 
 function Modal({ modal, closeModal }) {
@@ -17,6 +18,8 @@ function Modal({ modal, closeModal }) {
         case 'logout':
             component = <LogoutFormContainer />;
             break;
+        case 'added_to_cart':
+            component = <AddedToCartFormContainer />
         default:
             return null;
     }
