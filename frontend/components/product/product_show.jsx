@@ -36,9 +36,17 @@ class ProductShow extends React.Component {
             this.setState({ quantity: this.state.quantity - 1 });
         }
     }
+    // checkCart() {
+    //     let items_found = []
+    //     for (let i = 0; i < props.cart.length; i++) {
+    //         let current_item = props.cart[i]
+    //         items_found.push(current_item.product_id)
+    //     }
+    //     return items_found
+    // }
 
     render () {
-        const { product } = this.props;
+        const { product, cart } = this.props;
         if (!product) return null
         return (
             <div className="product_show">
@@ -67,7 +75,7 @@ class ProductShow extends React.Component {
                     <br/>
                     <h2>{product.description}</h2>
                 </div>
-
+        <h1>{this.checkCart}</h1>
             </div>
         )
     }

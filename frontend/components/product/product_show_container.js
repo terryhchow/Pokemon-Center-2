@@ -8,7 +8,9 @@ import {makeCartItems} from "../../actions/cart_actions"
 const mapStateToProps = (state, ownProps) => {
     return{
         currentUser: state.session.currentUser,
-        product: state.entities.products[ownProps.match.params.productId]
+        product: state.entities.products[ownProps.match.params.productId],
+        cart: Object.values(state.entities.cart)
+        
     }
 };
 
