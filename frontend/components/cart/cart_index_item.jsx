@@ -4,13 +4,16 @@ import { Link } from 'react-router-dom';
 const CartIndexItem = (props) => {
     const handleDelete = (cartId) => {
         props.destroyCartItem(cartId)
+            .then(window.location.reload())
     } 
     let foundId
+    let foundProduct
     const findProduct = () => {
         for (let i=0; i<props.cart.length; i++) {
             let current_item = props.cart[i]
             if (current_item.product_id === props.product.id) {
                 foundId = current_item.id
+                foundProduct=current_item
             }
         }
         return foundId
@@ -23,7 +26,7 @@ const CartIndexItem = (props) => {
             </Link>
             <span>
                 <h1 className="cart-name">{props.product.name}</h1>
-                {/* <h1 className="cart-quantity">{props.cart[foundId].quantity}</h1> */}
+                <h1 className="cart-quantity">{foundProduct.quantity}</h1>
                 <h1 className="cart-price">{props.product.price}</h1>
                 {/* <h1 className="cart-total">{props.product.price*props.cart.quantity}</h1> */}
             </span>

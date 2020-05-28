@@ -7,7 +7,7 @@ const ProductIndexItem = (props) => {
         <div className="product_index_item">
             <ul>
             <Link to ={`/products/${props.product.id}`} className="item">
-                <img className="item_image" src={window['prod' + prod_id.toString()]} />
+                <img className="item_img" src={window['prod' + prod_id.toString()]} />
                 <br/>
                 <li>{props.product.name}</li>
                 <br/>

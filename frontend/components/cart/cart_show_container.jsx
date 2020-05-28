@@ -1,13 +1,19 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { render } from 'react-dom';
+import { Link } from 'react-router-dom';
+
 
 class CartShow extends React.Component {
     render() {
         return (
             <div>
-                {}
-                <h1>Item Successfully Added to Cart!</h1>
+                <h1 classname="item_added">Item Successfully Added to Cart!</h1>
+                <h1>
+                    <Link to="/cart" className="header-link">
+                        Go To Cart
+                    </Link>
+                </h1>
             </div>
         )
     }

@@ -21,6 +21,20 @@ class Api::CartItemsController < ApplicationController
       end
   end
 
+  def update
+    @cart_item = CartItem.find_by(id: params[:id])
+    # debugger
+    if !@cart_item
+      render json: "cart item not found", status: 404
+      return
+    end
+    if @cart_item && @cart_item.update(cart_params)
+      render :show
+    else
+      render json: @cart_item.errors.full_messages, status: 422
+    end
+  end
+
   def show
     @cart_item = CartItem.find_by(id: params[:id])
   end

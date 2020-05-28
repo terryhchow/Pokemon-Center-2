@@ -23,6 +23,8 @@ export default ({ currentUser, openModal }) => {
                     <img className="logo" src={window.pokemon_logo} />
                 </Link>
             </li>
+            {/* <li><SearchBarContainer/>
+            </li> */}
             <li>{account}</li>
             <li>
                 <Link to="/cart" className="header-link">

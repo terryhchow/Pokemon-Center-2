@@ -49,6 +49,8 @@
 .item_image {
     display: inline-block;
     float: left;
+    min-width: 250px;
+    min-height: 250px;
 }
 .item_side {
     margin-left: 60px;
@@ -59,7 +61,10 @@
 .quantity {
     font-size: 18px;
     margin-bottom: 10px;
-    
+}
+.moving_qty {
+    margin: 5px;
+
 }
 .show_price {
     font-size: 18px;

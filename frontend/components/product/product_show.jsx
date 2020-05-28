@@ -1,30 +1,45 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import AddToCartContainer from './add_to_cart_container';
+import { Redirect } from 'react-router-dom';
 
 class ProductShow extends React.Component {
     constructor(props) {
         super(props)
         this.handleSubmit = this.handleSubmit.bind(this)
-        this.state = {quantity : 1}
+        this.state = {quantity : 1, cart: []}
         this.increaseQuantity = this.increaseQuantity.bind(this)
         this.decreaseQuantity = this.decreaseQuantity.bind(this)
+        // this.checkCart = this.checkCart.bind(this)
     }
     componentDidMount() {
+        this.props.getCartItems()
+        this.state.cart = Object.values(this.props.cart)
         this.props.requestProduct(this.props.match.params.productId);
     }
 
     handleSubmit(e) {
         e.preventDefault();
-        const { product } = this.props;
+        const { product, cart } = this.props;
         const cart_item = {
             product_id: product.id,
             user_id: this.props.currentUser.id,
             quantity: this.state.quantity
         }
+        for (let key in cart) {
+            let current_item = cart[key]
+            if (current_item.product_id === product.id) {
+                current_item.quantity += cart_item.quantity;
+                this.props.updateCartItem(current_item)
+                return
+            }
+        }
         this.props
             .createCartItem(cart_item)
             .then(data => this.props.history.push('/cart_items/${data.cartItems.id}'))
+            .then(console.log(".then", this.state.cart))
+        let prodID = cart_item.product_id
+        console.log(this.props.cart.prodID)
     }
     increaseQuantity(e) {
         e.preventDefault();
@@ -36,14 +51,6 @@ class ProductShow extends React.Component {
             this.setState({ quantity: this.state.quantity - 1 });
         }
     }
-    // checkCart() {
-    //     let items_found = []
-    //     for (let i = 0; i < props.cart.length; i++) {
-    //         let current_item = props.cart[i]
-    //         items_found.push(current_item.product_id)
-    //     }
-    //     return items_found
-    // }
 
     render () {
         const { product, cart } = this.props;
@@ -61,7 +68,7 @@ class ProductShow extends React.Component {
                     <span>
                         <h1 className="quantity">QUANTITY</h1>
                         <button onClick={this.decreaseQuantity} onChange={this.update}>-</button>
-                            <h1>{this.state.quantity}</h1>
+                            <h1 className="moving_qty">{this.state.quantity}</h1>
                         <button 
                                 onClick={this.increaseQuantity} onChange={this.update}>+</button>
                     </span>
@@ -75,7 +82,7 @@ class ProductShow extends React.Component {
                     <br/>
                     <h2>{product.description}</h2>
                 </div>
-        <h1>{this.checkCart}</h1>
+        {/* <h1>{this.checkCart}</h1> */}
             </div>
         )
     }
