@@ -7,9 +7,7 @@ const cartReducer = (oldState = {}, action) => {
         case RECEIVE_CART_ITEMS:
             return action.payload.cartItems;
         case RECEIVE_CART_ITEM:
-            debugger
             nextState[action.cartItem.id] = action.cartItem;
-            // nextState[action.entities.cart] = action.cart;
             console.log(action)
             return nextState;
         case REMOVE_CART_ITEM:

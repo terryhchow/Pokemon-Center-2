@@ -10,7 +10,6 @@ class ProductShow extends React.Component {
         this.state = {quantity : 1, cart: []}
         this.increaseQuantity = this.increaseQuantity.bind(this)
         this.decreaseQuantity = this.decreaseQuantity.bind(this)
-        // this.checkCart = this.checkCart.bind(this)
     }
     componentDidMount() {
         this.props.getCartItems()
@@ -39,7 +38,6 @@ class ProductShow extends React.Component {
             .then(data => this.props.history.push('/cart_items/${data.cartItems.id}'))
             .then(console.log(".then", this.state.cart))
         let prodID = cart_item.product_id
-        console.log(this.props.cart.prodID)
     }
     increaseQuantity(e) {
         e.preventDefault();
@@ -82,7 +80,6 @@ class ProductShow extends React.Component {
                     <br/>
                     <h2>{product.description}</h2>
                 </div>
-        {/* <h1>{this.checkCart}</h1> */}
             </div>
         )
     }
