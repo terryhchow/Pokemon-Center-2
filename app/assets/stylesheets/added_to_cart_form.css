@@ -1,0 +1,7 @@
+.added-cart {
+    background-color: green;
+    color: white;
+    z-index: 10;
+    min-width: 700px;
+    min-height: 700px;
+}

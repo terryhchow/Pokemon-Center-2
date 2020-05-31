@@ -50,3 +50,12 @@
     border-width: thin;
 }
 
+.search_icon {
+    max-height: 35px;
+    max-width: 35px;
+}
+
+.search_bar {
+    max-height: 35px;
+    width: 200px;
+}
