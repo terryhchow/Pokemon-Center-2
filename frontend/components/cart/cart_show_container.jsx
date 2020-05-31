@@ -8,7 +8,10 @@ class CartShow extends React.Component {
     render() {
         return (
             <div>
-                <h1 classname="item_added">Item Successfully Added to Cart!</h1>
+                <h1 className="item_added">
+                    <br></br>
+                    Item Successfully Added to Cart!
+                    </h1>
                 <h1>
                     <Link to="/cart" className="header-link">
                         Go To Cart
