@@ -6,7 +6,7 @@ class AddedToCartForm extends React.Component {
     render() {
          return (
             <div>
-                <h1>Product added to cart</h1>
+                <h1 className="added-cart">Product added to cart</h1>
             </div>
         );
     }

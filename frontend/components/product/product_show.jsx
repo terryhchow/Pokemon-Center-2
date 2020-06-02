@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import AddToCartContainer from './add_to_cart_container';
 import { Redirect } from 'react-router-dom';
+import { openModal } from '../../actions/modal_actions';
 
 class ProductShow extends React.Component {
     constructor(props) {
@@ -30,13 +31,15 @@ class ProductShow extends React.Component {
             if (current_item.product_id === product.id) {
                 current_item.quantity += cart_item.quantity;
                 this.props.updateCartItem(current_item)
+                    // .then(openModal("added_to_cart"))
                 return
             }
         }
         this.props
             .createCartItem(cart_item)
             .then(data => this.props.history.push('/cart_items/${data.cartItems.id}'))
-            .then(console.log(".then", this.state.cart))
+            // .then(console.log(".then", this.state.cart))
+            // .then(openModal("added_to_cart"))
         let prodID = cart_item.product_id
     }
     increaseQuantity(e) {
