@@ -1,0 +1,32 @@
+
+.cart_items{
+    border-top: grey solid;
+    border-width: thin;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1px;
+    margin-left: 15px;
+    font-family: sans-serif;
+}
+.cart-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 55%;
+    margin-bottom: -20px;
+}
+.cart-header>h1 {
+    font-size: 18px;
+}
+.prod-head {
+    margin-right: 80px;
+}
+.price-total {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 55%;
+}
+.price-total>h1 {
+    font-size: 18px;
+}

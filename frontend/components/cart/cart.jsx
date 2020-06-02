@@ -19,6 +19,13 @@ class CartForm extends React.Component {
                     <h1>Shopping Cart</h1>
                 </header>
                 <br />
+                <div className="cart-header">
+                    <h1 className="prod-head">Product</h1>
+                    <h1> </h1>
+                    <h1>Qty</h1>
+                    <h1>Price</h1>
+                    <h1>Total</h1>
+                </div>
                 <div className="prod_block">
                     {products.map(product => 
                     <CartIndexItem 
@@ -27,6 +34,10 @@ class CartForm extends React.Component {
                         key={product.id} 
                         currentUser={currentUser}
                         destroyCartItem={destroyCartItem}/>)}
+                </div>
+                <div className="price-total">
+                        <h1>Total</h1>
+                        <h1>{}</h1>
                 </div>
             </div>
         ) : (

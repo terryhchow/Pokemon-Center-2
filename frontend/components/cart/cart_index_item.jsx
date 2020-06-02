@@ -24,13 +24,13 @@ const CartIndexItem = (props) => {
             <Link to={`/products/${props.product.id}`} className="cart-item">
                 <img className="cart-item_image" src={window['prod' + props.product.id.toString()]} />
             </Link>
-            <span>
+            {/* <span className="cart-details"> */}
                 <h1 className="cart-name">{props.product.name}</h1>
                 <h1 className="cart-quantity">{foundProduct.quantity}</h1>
                 <h1 className="cart-price">{props.product.price}</h1>
-                {/* <h1 className="cart-total">{props.product.price*props.cart.quantity}</h1> */}
-            </span>
-                <button className="remove-item" onClick={() => handleDelete(foundId)}>Remove</button>
+                <h1 className="cart-total">{props.product.price*foundProduct.quantity}</h1>
+                <button className="remove-item" onClick={() => handleDelete(foundId)}>x Remove</button>
+            {/* </span> */}
         </div>
     )
 }
