@@ -7,6 +7,7 @@ import ProductIndexContainer from './product/product_index_container'
 import ProductShowContainer from './product/product_show_container'
 import CartContainer from './cart/cart_container';
 import CartShowContainer from './cart/cart_show_container'
+import SearchResultsContainer from './product/search_results_container'
 import {AuthRoute, ProtectedRoute } from '../util/route_util';
 import Modal from './session/modal';
 
@@ -23,6 +24,7 @@ const App = () => (
             <Route exact path="/cart" component={CartContainer} />
             <AuthRoute exact path="/signup" component={SignupFormContainer} />
             <Route path="/cart_items" component={CartShowContainer} />
+            <Route path="/products/search" component={SearchResultsContainer} />
 
         </Switch>
     </div>

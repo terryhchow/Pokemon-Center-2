@@ -1,0 +1,40 @@
+
+.search-bar-container {
+    display: flex;
+    flex-direction: row;
+    position: relative
+}
+.search_icon {
+    max-height: 35px;
+    max-width: 35px;
+}
+
+.search-bar {
+    max-height: 35px;
+    width: 400px;
+    background-color: rgb(236, 234, 234);
+    border: none;
+}
+
+.result-item-link {
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom:10px;
+    position: absolute;
+    width: 400px;
+}
+
+.result-item {
+    border: lightslategray;
+    height: 30px;
+    color: gray;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: red;
+    background-color: rgb(233, 232, 232);
+
+}
+.result-item:hover {
+    background-color: rgb(150, 203, 236);
+    text-decoration: underline;
+}

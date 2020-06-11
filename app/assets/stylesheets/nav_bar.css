@@ -29,7 +29,7 @@
     font-size: 22px;
     color: rgb(104, 104, 104);
     position: absolute;
-    left: 67%;
+    left: 69%;
     top: 0mm;
 }
 .sign_in_name {
@@ -40,7 +40,7 @@
     font-size: 22px;
     color: rgb(104, 104, 104);
     position: absolute;
-    left: 71%;
+    left: 72%;
     top: -2mm;
 }
 .nav2 {
@@ -48,14 +48,4 @@
     max-width: 100%;
     border-top: grey solid;
     border-width: thin;
-}
-
-.search_icon {
-    max-height: 35px;
-    max-width: 35px;
-}
-
-.search_bar {
-    max-height: 35px;
-    width: 200px;
 }

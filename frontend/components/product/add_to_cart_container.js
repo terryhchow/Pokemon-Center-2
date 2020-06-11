@@ -4,7 +4,7 @@ import AddToCart from './add_to_cart_form'
 import { makeCartItems } from "../../actions/cart_actions";
 
 const mapStateToProps = state => {
-    debugger
+    // debugger
     return {
         // currentUserId: state.session.id,
         // products: Object.values(state.entities.products),

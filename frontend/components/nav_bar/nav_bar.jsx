@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SearchBarContainer from './search_bar_container';
 
 
 export default ({ currentUser, openModal }) => {
@@ -23,8 +24,11 @@ export default ({ currentUser, openModal }) => {
                     <img className="logo" src={window.pokemon_logo} />
                 </Link>
             </li>
-            {/* <li><SearchBarContainer/>
-            </li> */}
+            <li><SearchBarContainer
+                // products={this.props.products}
+                // requestAllProducts={this.props.requestAllProducts}
+                />
+            </li>
             <li>{account}</li>
             <li>
                 <Link to="/cart" className="header-link">

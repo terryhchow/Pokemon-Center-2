@@ -11,6 +11,14 @@ class CartForm extends React.Component {
         this.props.getCartItems();
     }
 
+    getCartTotal() {
+        //get the items in the user's cart
+        //match product id with products table to find price
+        //multiply price with quantity
+        //add up all of the subtotals
+
+    }
+
     render() {
         const { products, destroyCartItem, currentUser, cart } = this.props;
         const cart_page = currentUser? (
@@ -35,10 +43,10 @@ class CartForm extends React.Component {
                         currentUser={currentUser}
                         destroyCartItem={destroyCartItem}/>)}
                 </div>
-                <div className="price-total">
+                {/* <div className="price-total">
                         <h1>Total</h1>
-                        <h1>{}</h1>
-                </div>
+                        <h1>{products.all}</h1>
+                </div> */}
             </div>
         ) : (
             <div className="header">
