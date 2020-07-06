@@ -24,10 +24,7 @@ export default ({ currentUser, openModal }) => {
                     <img className="logo" src={window.pokemon_logo} />
                 </Link>
             </li>
-            <li><SearchBarContainer
-                // products={this.props.products}
-                // requestAllProducts={this.props.requestAllProducts}
-                />
+            <li><SearchBarContainer/>
             </li>
             <li>{account}</li>
             <li>
@@ -40,6 +37,7 @@ export default ({ currentUser, openModal }) => {
             <Link to="/products">
                 <img className="nav2" src={nav2}/>
             </Link>
+            <h1 className="free-ship">Free Shipping on All Orders over $50!</h1>
         </div>
     )
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import Results from './results';
-import SearchResults from '../product/search_results';
+import { Link } from 'react-router-dom';
 
 
 class SearchBar extends React.Component {
@@ -9,8 +9,6 @@ class SearchBar extends React.Component {
         super(props);
         this.state = { searchTerm: '', searchItems: [] };
         this.filterSearch = this.filterSearch.bind(this);
-        this.search = this.search.bind(this);
-        this.handleKeyDown = this.handleKeyDown.bind(this);
         this.clear = this.clear.bind(this);
     }
 
@@ -18,22 +16,8 @@ class SearchBar extends React.Component {
         this.props.requestAllProducts();
     }
 
-    search() {
-        if (this.state.searchTerm === '') return;
-        if (this.state.searchItems.length === 0) return;
-        // <SearchResults 
-        //     searchItems = {this.state.searchItems}
-        // />
-
-        this.clear();
-    }
-
     clear() {
         this.setState({ searchTerm: "", searchItems: [] });
-    }
-
-    handleKeyDown(e) {
-        if (e.key === 'Enter') this.search();
     }
 
     filterSearch(e) {
@@ -44,8 +28,10 @@ class SearchBar extends React.Component {
                 product.string = `${product.name} (${product.id})`;
                 return product;
             })
-            .filter(product => product.string.toUpperCase().includes(searchString));
-
+            .filter(
+                product => {
+                    return(
+                    product.string.toUpperCase().includes(searchString))});
         if (searchItems.length === this.props.products.length)
             this.setState({ searchTerm, searchItems: [] });
         else
@@ -61,15 +47,23 @@ class SearchBar extends React.Component {
                     className="search-bar"
                     value={this.state.searchTerm}
                     onChange={this.filterSearch}
-                    onKeyDown={this.handleKeyDown}
                     type="text"
                     placeholder=" Search Pikachu, Plush, T-Shirts..."
                     />
-                <img onClick={this.search} className="search_icon" src={window.search_icon}></img>
+                    <Link className="search_icon"
+                        onClick={this.props.clear}
+                        to={{
+                            pathname: `/search/${this.state.searchTearm}`,
+                            state: {
+                                searchTerm: this.state.searchTerm
+                            }
+                    }}>
+                        <img src={window.search_icon}/>
+                </Link>
                 </div>
                 <Results
-                    handleClear={this.clear}
                     searchItems={this.state.searchItems}
+                    handleClear={this.clear}
                     products={this.props.products}
                 />
             </div>

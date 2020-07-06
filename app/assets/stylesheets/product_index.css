@@ -1,14 +1,14 @@
 .product_index {
-    border-top: grey solid;
-    border-width: thin;
+    /* border-top: grey solid;
+    border-width: thin; */
     display: flex;
-    margin-top: 10px;
-    margin-left: 15px;
+    margin-top: 1rem;
+    margin-left: 15rem;
 }
 
 .prod_path {
     font-family: sans-serif;
-    font-size: 16px;
+    font-size: 16rem;
     color:  black;
     text-decoration: none;
 }
@@ -23,5 +23,5 @@
 }
 
 .header {
-    margin-top: 20px;
+    margin-top: 20rem;
 }

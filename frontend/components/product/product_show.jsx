@@ -58,7 +58,7 @@ class ProductShow extends React.Component {
         if (!product) return null
         return (
             <div className="product_show">
-                <h1 className="free-ship">Free Shipping on All Orders over $50!</h1>
+                {/* <h1 className="free-ship">Free Shipping on All Orders over $50!</h1> */}
                 <header className="header">
                     <Link to="/" className="prod_path">HOME</Link>
                 </header>
@@ -72,8 +72,8 @@ class ProductShow extends React.Component {
                             <h1 className="moving_qty">{this.state.quantity}</h1>
                         <button 
                                 onClick={this.increaseQuantity} onChange={this.update}>+</button>
-                    </span>
                     <h1 className="show_price">${product.price}</h1>
+                    </span>
                         <button className="add_cart" onClick={this.handleSubmit}>ADD TO CART</button>
                         
                     </div>

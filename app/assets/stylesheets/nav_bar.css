@@ -4,44 +4,44 @@
     justify-content: space-between; 
     justify-items: center;
     align-items: center;
-    height: 70px;
+    height: 10rem;
 }
 .nav_bar li {
     display: block;
-    padding: 10px;
+    padding: 1rem;
 }
 .logo {
-    max-width: 300px;
-    max-height: 60px;
+    max-width: 30rem;
+    max-height: 8rem;
 }
 .cart_icon {
-    max-width: 120px;
-    max-height: 52px;
+    max-width: 12rem;
+    max-height: 5rem;
     position: absolute;
     left: 87%;
-    top: 3.3mm;
+    top: 2.8rem;
 }
 .sign_in_icon {
-    max-height: 160px;
-    width: 180px;
-    padding: 10px;
+    max-height: 16rem;
+    width: 18rem;
+    padding: 1rem;
     font-family: sans-serif;
-    font-size: 22px;
+    font-size: 22rem;
     color: rgb(104, 104, 104);
     position: absolute;
     left: 69%;
     top: 0mm;
 }
 .sign_in_name {
-    max-height: 160px;
-    width: 180px;
-    padding: 10px;
+    max-height: 16rem;
+    width: 18rem;
+    padding: 1rem;
     font-family: sans-serif;
     font-size: 22px;
-    color: rgb(104, 104, 104);
+    color: rgb(132, 132, 132);
     position: absolute;
-    left: 72%;
-    top: -2mm;
+    left: 76%;
+    top: -17rem;
 }
 .nav2 {
     display: inline-block;
@@ -49,3 +49,16 @@
     border-top: grey solid;
     border-width: thin;
 }
+.free-ship {
+   width: 100%; 
+   text-align: center; 
+   font-family: sans-serif;
+   color: white;
+   font-size: 16px;
+   background-color: #0054a6;
+    z-index: 1;
+   margin: 0rem;
+   align-items: center;
+   padding: 1rem;
+   max-height: 8rem;
+} 
