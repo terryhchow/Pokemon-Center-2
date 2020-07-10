@@ -1,18 +1,18 @@
 .logout_form {
     background-color: white;
-    padding: 30px;
+    padding: 3rem;
     display: flexbox;
     position: absolute;
-    top: -140px;
-    left: -102px;
+    top: -11em;
+    left: -5.5em;
     border:  #0054a6 dotted;
     border-width: .5mm;
 }
 .logout_button {
-    border-radius: 3rem;
+    border-radius: 1rem;
     background-color: rgba(187, 184, 184, 0.89);
-    width: 170rem;
-    height: 35rem;
+    width: 20rem;
+    height: 8rem;
     color: gray;
     font-weight: 350;
     font-size: 16px;

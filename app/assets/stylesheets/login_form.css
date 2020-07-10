@@ -1,32 +1,36 @@
 .login_form {
     background-color: white;
-    padding: 30rem;
+    padding: 30px;
     display: flexbox;
     border:  #0054a6 dotted;
     border-width: .5mm;
+    top: -11em;
+    left: -5.5em;
+    position: absolute;
+ 
 }
 
 .session-submit {
     background-color: #0054a6;
     color: white;
-    padding: 5rem;
-    border-radius: 3rem;
+    padding: 5px;
+    border-radius: 15px;
     font-weight: bold;
     font-family: sans-serif;
-    margin: 8rem 0rem;
-    width: 80rem;
-    height: 35rem;
+    margin: 8px 0px;
+    max-width: 80px;
+    max-height: 35px;
 }
 .session-submit:hover{
     background-color: #6998c7;
 }
 .btn {
-    margin: 8rem 0rem;
-    border-radius: 3rem;
+    margin: 8px 0px;
+    border-radius: 3px;
     background-color: rgba(187, 184, 184, 0.89);
-    width: 70rem;
-    height: 25rem;
-    margin-left: 5rem;
+    width: 70px;
+    height: 25px;
+    margin-left: 5px;
 }
 .btn:hover {
     background-color: rgba(182, 180, 180, 0.959);
@@ -35,12 +39,13 @@
     font-family: sans-serif;
     color: #767676;
     font-weight: lighter;
+    margin: 1em;
 }
 .login-input {
-    margin: 8rem 0rem;
-    border-radius: 3rem;
+    margin: 8px 0px;
+    border-radius: 3px;
     border: gray solid;
     border-width: .3mm;
-    width: 170rem;
-    height: 20rem;
+    width: 170px;
+    height: 20;
 }
