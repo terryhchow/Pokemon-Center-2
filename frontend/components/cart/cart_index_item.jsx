@@ -37,16 +37,3 @@ const CartIndexItem = (props) => {
 
 export default CartIndexItem
 
-// class CartIndexItem extends React.Component {
-//     constructor(props) {
-//         super(props)
-//         this.state = {
-//             this.product = {props.product}
-//             this.cart = {props.cart}
-//             this.handleSubmit = this.handleSumbit.bind(this)
-//         }
-//     }
-//     handleSubmit(e) {
-
-//     }
-// }

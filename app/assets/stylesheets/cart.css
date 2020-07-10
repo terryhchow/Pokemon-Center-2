@@ -14,12 +14,14 @@
     justify-content: space-between;
     width: 60%;
     margin-bottom: -20px;
+    margin-top: -15rem;
 }
 .cart-header>h1 {
     font-size: 18px;
 }
 .prod-head {
     margin-right: 80px;
+    padding: none;
 }
 .price-total {
     display: flex;
@@ -33,3 +35,8 @@
 /* .prod_block {
     max-height: 20rem;
 } */
+.shopping-cart-header {
+    margin-top: 5rem;
+    font-size: 24px;
+    color: #525050;;
+}

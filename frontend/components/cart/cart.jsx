@@ -23,8 +23,8 @@ class CartForm extends React.Component {
         const { products, destroyCartItem, currentUser, cart } = this.props;
         const cart_page = currentUser? (
             <div className="cart_items">
-                <header className="header">
-                    <h1>Shopping Cart</h1>
+                <header className="shopping-cart-header">
+                    <h2>Shopping Cart</h2>
                 </header>
                 <br />
                 <div className="cart-header">
