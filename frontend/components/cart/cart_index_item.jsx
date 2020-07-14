@@ -19,6 +19,10 @@ const CartIndexItem = (props) => {
         return foundId
     }
     findProduct()
+    let quantity = 0
+    if (foundProduct) {
+        quantity = foundProduct.quantity;
+    }
     return (
         <div className="cart_index_item">
             <Link to={`/products/${props.product.id}`} className="cart-item">
@@ -26,9 +30,9 @@ const CartIndexItem = (props) => {
             </Link>
             {/* <span className="cart-details"> */}
                 <h1 className="cart-name">{props.product.name}</h1>
-                <h1 className="cart-quantity">{foundProduct.quantity}</h1>
+                <h1 className="cart-quantity">{quantity}</h1>
                 <h1 className="cart-price">{props.product.price}</h1>
-                <h1 className="cart-total">{props.product.price*foundProduct.quantity}</h1>
+                <h1 className="cart-total">{props.product.price*quantity}</h1>
                 <button className="remove-item" onClick={() => handleDelete(foundId)}>x Remove</button>
             {/* </span> */}
         </div>
