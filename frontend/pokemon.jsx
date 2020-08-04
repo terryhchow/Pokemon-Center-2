@@ -21,4 +21,3 @@ document.addEventListener("DOMContentLoaded", () => {
     ReactDOM.render(<Root store={store}/>, root); });
 
 
-// password to the real website: chubbychu1
