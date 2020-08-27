@@ -32,6 +32,12 @@
     left: 72%;
     top: 5mm;
 }
+.sign_in_icon:hover {
+    cursor: pointer;
+}
+.sign_in_name:hover {
+    cursor: pointer;
+}
 .sign_in_name {
     max-height: 16rem;
     width: 18rem;
