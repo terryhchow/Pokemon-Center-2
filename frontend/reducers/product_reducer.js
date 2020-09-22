@@ -9,7 +9,11 @@ const productReducer = (oldState = {}, action) => {
         case RECEIVE_PRODUCT:
             return action.product;
         case RECEIVE_CART_ITEMS:
-            return action.payload.products;
+            if (action.payload && action.payload.products) {
+                return action.payload.products;
+            } else {
+                return oldState
+            }
         default:
             return oldState;
     }
