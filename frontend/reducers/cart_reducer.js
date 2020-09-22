@@ -5,7 +5,11 @@ const cartReducer = (oldState = {}, action) => {
     let nextState = Object.assign({}, oldState);
     switch (action.type) {
         case RECEIVE_CART_ITEMS:
-            return action.payload.cartItems;
+            if (action.payload && action.payload.cartItems) {
+                return action.payload.cartItems;
+            } else {
+                return oldState;
+            }
         case RECEIVE_CART_ITEM:
             nextState[action.cartItem.id] = action.cartItem;
             console.log(action)
