@@ -22,6 +22,10 @@ const CartIndexItem = (props) => {
     let quantity = 0
     if (foundProduct) {
         quantity = foundProduct.quantity;
+    } else {
+        return (
+            <div></div>
+        )
     }
     return (
         <div className="cart_index_item">
